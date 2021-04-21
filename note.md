@@ -78,3 +78,6 @@ When you create a Markdown file, you can include a set of key value pairs that c
 
 What is important in this step is the key pair slug. The value that is assigned to the key slug is used in order to navigate to your post.  
 [Reference](https://www.gatsbyjs.com/docs/how-to/routing/adding-markdown-pages/)
+
+### **Disable Git Credential Manager** *[Git]*
+[How do I disable Git Credential Manager for Windows?](https://stackoverflow.com/questions/37182847/how-do-i-disable-git-credential-manager-for-windows) on Stack Overflow
