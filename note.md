@@ -1,8 +1,8 @@
-[4/19/2021](#4/19/2021)  
-[4/20/2021](#4/20/2021)  
-[4/21/2021](#4/21/2021)
+[4/19/2021](#4-19-2021)  
+[4/20/2021](#4-20-2021)  
+[4/21/2021](#4-21-2021)
 
-### 4/19/2021
+### 4-19-2021
 
 ---
 
@@ -68,7 +68,7 @@ import * as headerStyles from 'header.module.css'
 ### **Mardown Newline** *[MD]*
 Enter two space at the end of a line in .md file to start a new line.
 
-### 4/20/2021
+### 4-20-2021
 
 ---
 
@@ -96,7 +96,7 @@ What is important in this step is the key pair slug. The value that is assigned 
 ### **Disable Git Credential Manager** *[Git]*
 [How do I disable Git Credential Manager for Windows?](https://stackoverflow.com/questions/37182847/how-do-i-disable-git-credential-manager-for-windows) on Stack Overflow
 
-### 4/21/2021
+### 4-21-2021
 
 ---
 
