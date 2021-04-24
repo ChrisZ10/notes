@@ -145,3 +145,11 @@ export const query = graphql`
 [Article about Git Pull](https://www.atlassian.com/git/tutorials/syncing/git-pull) on Bitbucket  
 ![Illustration](https://wac-cdn.atlassian.com/dam/jcr:00d011ed-03dc-440f-afc5-9b13d5e14fbf/bubble%20diagram-01.svg?cdnVersion=1568)
 ![Illustration](https://wac-cdn.atlassian.com/dam/jcr:b3a663dc-1985-40df-b0a5-c6bcbacd71af/bubble%20diagram-02.svg?cdnVersion=1568)
+
+### 4-21-2021
+
+### **React Helmet** *[React]*
+Manage all of your changes to the document head.  
+[Reference](https://www.npmjs.com/package/react-helmet)  
+Gatsby plugin for using react-helmet:  
+[gatsby-plugin-react-helmet](https://www.gatsbyjs.com/plugins/gatsby-plugin-react-helmet/)
