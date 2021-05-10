@@ -154,3 +154,21 @@ Manage all of your changes to the document head.
 [Reference](https://www.npmjs.com/package/react-helmet)  
 Gatsby plugin for using react-helmet:  
 [gatsby-plugin-react-helmet](https://www.gatsbyjs.com/plugins/gatsby-plugin-react-helmet/)
+
+### 5-10-2021
+
+### **CSS Attribute Selector** *[CSS]*
+![Exactly Equal](https://i1.wp.com/css-tricks.com/wp-content/uploads/2020/06/rel-equals.png?w=570&ssl=1)
+![Contains](https://i1.wp.com/css-tricks.com/wp-content/uploads/2020/06/rel-anywhere.png?w=570&ssl=1)
+![Begins With](https://i0.wp.com/css-tricks.com/wp-content/uploads/2020/06/rel-begins.png?w=570&ssl=1)
+![Ends With](https://i2.wp.com/css-tricks.com/wp-content/uploads/2020/06/rel-ends.png?w=570&ssl=1)
+![Within Space Separated List](https://i0.wp.com/css-tricks.com/wp-content/uploads/2020/06/rel-space.png?w=570&ssl=1)
+![Within Dash Separated List](https://i1.wp.com/css-tricks.com/wp-content/uploads/2020/06/rel-dash.png?w=570&ssl=1) 
+
+[Reference](https://css-tricks.com/attribute-selectors/)
+
+### **Absolute, Relative, and Fixed Positioning** *[CSS]*
+There are two other things that happen when you set position: relative; on an element that you should be aware of. One is that it `introduces the ability to use z-index on that element`, which doesn’t work with statically positioned elements. Even if you don’t set a z-index value, this element will now appear on top of any other statically positioned element.
+
+The other thing that happens is `it limits the scope of absolutely positioned child elements`. Any element that is a child of the relatively positioned element can be absolutely positioned within that block.  
+[Absolute, Relative, Fixed Positioning: How do they differ?](https://css-tricks.com/absolute-relative-fixed-positioining-how-do-they-differ/)
