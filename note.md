@@ -1,7 +1,8 @@
 [4/19/2021](#4-19-2021)  
 [4/20/2021](#4-20-2021)  
 [4/21/2021](#4-21-2021)  
-[4/22/2021](#4-22-2021)
+[4/22/2021](#4-22-2021)  
+[5/10/2021](#5-10-2021)
 
 ### 4-19-2021
 
@@ -172,3 +173,27 @@ There are two other things that happen when you set position: relative; on an el
 
 The other thing that happens is `it limits the scope of absolutely positioned child elements`. Any element that is a child of the relatively positioned element can be absolutely positioned within that block.  
 [Absolute, Relative, Fixed Positioning: How do they differ?](https://css-tricks.com/absolute-relative-fixed-positioining-how-do-they-differ/)
+
+### 5-12-2021
+
+### **Commonly Used CSS Syntax** *[CSS]*
+```scss
+background: linear-gradient(120deg, white, black);
+
+transform: skew(120deg) translate(50%, 50%) rotateZ(60deg);
+
+mix-blend-mode: multiply;
+
+@keyframes animation-name {
+    0% {
+        /* status at that point */
+    }
+    100% {
+
+    }
+    ...
+}
+animation: animation-name 3s forwards;
+
+transition: property 3s ease-in-out;
+```
