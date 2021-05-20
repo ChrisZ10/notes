@@ -2,7 +2,9 @@
 [4/20/2021](#4-20-2021)  
 [4/21/2021](#4-21-2021)  
 [4/22/2021](#4-22-2021)  
-[5/10/2021](#5-10-2021)
+[5/10/2021](#5-10-2021)  
+[5/12/2021](#5-12-2021)  
+[5/15/2021](#5-15-2021)
 
 ### 4-19-2021
 
@@ -197,3 +199,103 @@ animation: animation-name 3s forwards;
 
 transition: property 3s ease-in-out;
 ```
+
+### **GSAP Basics** *[GSAP]*
+A `Tween` is what does all the animation work - think of it like a high-performance property setter. You feed in targets (the objects you want to animate), a duration, and any properties you want to animate and when its playhead moves to a new position, it figures out what the property values should be at that point applies them accordingly.
+```JS
+gsap.to(".box", {rotation: 27, x: 100, duration: 1});
+```
+
+### 5-15-2021
+
+### **GSAP ScrollTrigger** *[GSAP]*
+```JS
+let tl = gsap.timeline({
+    scrollTrigger: {
+        trigger: ".className",
+        start: "top 50%", // when the top of the trigger hits 50% down from the top of the viewport
+        end: () => "+=" + document.querySelector(".className").offsetWidth * 2, // a function to dynamically calculate the value
+        scrub: 1
+    }
+});
+tl.to(".className", {x: 400, rotate: 360, ease: "none", duration: 3});
+```
+
+### **GSAP Text** *[GSAP]*
+```JS
+const tl = gsap.timeline({
+    paused: true    
+});
+tl.to(".textSelector", {
+    text: {
+        value: "new text"
+    },
+    duration: 3,
+    ease: "none"
+});
+document.querySelector(".buttonSelector").onclick = () => {
+    tl.play();
+}
+```
+
+### **CSS Grid Layout** *[CSS]*
+To get started you have to define a `container element` as a grid with `display: grid`, set the column and row sizes with `grid-template-columns` and `grid-template-rows`, and then place its child elements into the grid with `grid-column` and `grid-row`.
+
+**Important terminology**:  
+`Grid Container` (Direct parent of all the grid items), `Grid Line`, `Grid Track` (The space between two adjacent grid lines), `Grid Area` (The total space surrounded by four grid lines), `Grid Item` (Direct descendants of the grid container), `Grid Cell` (The space between two adjacent row and two adjacent column grid lines).
+
+**grid-template-columns  
+grid-template-rows**  
+```css
+.container {
+  grid-template-columns: [first] 40px [line2] 50px [line3] auto [col4-start] 50px [five] 40px [end];
+  grid-template-rows: [row1-start] 25% [row1-end] 100px [third-line] auto [last-line];
+}
+
+/* a line can have more than one name */ 
+.container {
+  grid-template-rows: [row1-start] 25% [row1-end row2-start] 25% [row2-end];
+}
+
+.container {
+  grid-template-columns: repeat(3, 20px [col-start]);
+}
+/* is equivalent to */
+.container {
+  grid-template-columns: 20px [col-start] 20px [col-start] 20px [col-start];
+}
+
+/* If multiple lines share the same name, they can be referenced by their line name and count */
+.item {
+  grid-column-start: col-start 2;
+}
+
+/* The fr unit allows you to set the size of a track as a fraction of the free space of the grid container */
+.container {
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+/* The free space is calculated after any non-flexible items */
+.container {
+  grid-template-columns: 1fr 50px 1fr 1fr;
+} /* the free space doesn't include the 50px */
+```
+
+### **space-around/space-between/space-evenly**
+`space-around`: items are evenly distributed in the line with equal space around them.   
+`space-between`: items are evenly distributed in the line; first item is on the start line, last item on the end line.  
+`space-evenly`: items are distributed so that the spacing between any two adjacent alignment subjects, before the first alignment subject, and after the last alignment subject is the same.  
+
+### **inline-size/block-size**
+`inline-size`:   
+- The inline-size CSS property defines the horizontal or vertical size of an element's block, depending on its writing mode. It corresponds to either the width or the height property, depending on the value of writing-mode.   
+- If the writing mode is vertically oriented, the value of inline-size relates to the height of the element; otherwise, it relates to the width of the element.   
+
+`block-size`:   
+the corresponding axis
+
+### **SVG**
+`Scalable Vector Graphics (SVG)` are an XML-based markup language for describing two-dimensional based vector graphics. As such, it's a `text-based`, open Web standard for describing images that can be rendered cleanly at any size and are designed specifically to work well with other web standards including CSS, DOM, JavaScript, and SMIL. SVG is, essentially, to graphics what HTML is to text.
+
+### **:root**
+The `:root CSS pseudo-class` matches the **root element of a tree representing the document**. `In HTML, :root represents the html element and is identical to the selector html`, except that **its specificity is higher**.
